@@ -1,0 +1,38 @@
+{
+    "name": "polygontech/sms-service-client",
+    "type": "library",
+    "description": "Send SMS through sms-service of Polygon Technology",
+    "keywords": [
+        "sms",
+        "sms-service",
+        "bulk sms"
+    ],
+    "homepage": "https://github.com/ShafiqIslam/sms-service-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shafiqul Islam",
+            "email": "shafiq.startern@gmail.com",
+            "homepage": "https://github.com/ShafiqIslam/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.1.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "polygontech/common-helpers": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Polygontech\\SmsService\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Polygontech\\SmsService\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
